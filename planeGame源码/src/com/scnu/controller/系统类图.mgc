@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ClassDiagram>
+    <Class name="com.scnu.manager.GameElement" x="317" y="869">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+    </Class>
+    <Class name="com.scnu.element.BOSS" x="935" y="1986">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+        <Extension destinationClassName="com.scnu.element.ElementBase"/>
+        <Communication destinationClassName="com.scnu.manager.ElementManager"/>
+        <Communication destinationClassName="com.scnu.element.ElementBase"/>
+        <Communication destinationClassName="com.scnu.element.Bullet"/>
+    </Class>
+    <Class name="com.scnu.element.Enemy" x="1639" y="2097">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+        <Extension destinationClassName="com.scnu.element.ElementBase"/>
+        <Communication destinationClassName="com.scnu.manager.ElementManager"/>
+        <Communication destinationClassName="com.scnu.element.ElementBase"/>
+        <Communication destinationClassName="com.scnu.element.Bullet"/>
+    </Class>
+    <Class name="com.scnu.controller.GameListener" x="40" y="51">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+        <Association
+            destinationClassName="com.scnu.manager.ElementManager"
+            endpointName="em" kind="Simple"/>
+        <Communication destinationClassName="com.scnu.manager.ElementManager"/>
+        <Communication destinationClassName="com.scnu.element.ElementBase"/>
+    </Class>
+    <Class name="com.scnu.manager.ElementManager" x="250" y="670">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+        <Communication destinationClassName="com.scnu.manager.GameElement"/>
+    </Class>
+    <Class name="com.scnu.show.GameMainJPanel" x="1636" y="1044">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+        <Association
+            destinationClassName="com.scnu.manager.ElementManager"
+            endpointName="em" kind="Simple"/>
+        <Communication destinationClassName="com.scnu.manager.GameElement"/>
+        <Communication destinationClassName="com.scnu.manager.ElementManager"/>
+        <Communication destinationClassName="com.scnu.element.ElementBase"/>
+    </Class>
+    <Class name="com.scnu.element.Player" x="1809" y="1844">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+        <Extension destinationClassName="com.scnu.element.ElementBase"/>
+        <Communication destinationClassName="com.scnu.manager.ElementManager"/>
+        <Communication destinationClassName="com.scnu.element.ElementBase"/>
+        <Communication destinationClassName="com.scnu.element.Bullet"/>
+    </Class>
+    <Class name="com.scnu.element.ElementBase" x="1486" y="1608">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+    </Class>
+    <Class name="com.scnu.element.Bullet" x="1810" y="1295">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+        <Extension destinationClassName="com.scnu.element.ElementBase"/>
+        <Communication destinationClassName="com.scnu.element.ElementBase"/>
+    </Class>
+    <Class name="com.scnu.element.Prop" x="1064" y="1614">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+        <Extension destinationClassName="com.scnu.element.ElementBase"/>
+        <Communication destinationClassName="com.scnu.element.ElementBase"/>
+    </Class>
+    <Class name="com.scnu.game.GameStart" x="1136" y="88">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+        <Communication destinationClassName="com.scnu.show.GameJFrame"/>
+    </Class>
+    <Class name="com.scnu.element.Background" x="1002" y="1252">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+        <Extension destinationClassName="com.scnu.element.ElementBase"/>
+        <Communication destinationClassName="com.scnu.element.ElementBase"/>
+    </Class>
+    <Class name="com.scnu.show.GameJFrame" x="1604" y="724">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+    </Class>
+    <Class name="com.scnu.controller.GameThread" x="36" y="236">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+        <Association
+            destinationClassName="com.scnu.manager.ElementManager"
+            endpointName="em" kind="Simple"/>
+        <Communication destinationClassName="com.scnu.element.Prop"/>
+        <Communication destinationClassName="com.scnu.manager.GameElement"/>
+        <Communication destinationClassName="com.scnu.element.BOSS"/>
+        <Communication destinationClassName="com.scnu.element.Enemy"/>
+        <Communication destinationClassName="com.scnu.manager.ElementManager"/>
+        <Communication destinationClassName="com.scnu.element.Player"/>
+        <Communication destinationClassName="com.scnu.element.ElementBase"/>
+        <Communication destinationClassName="com.scnu.manager.GameLoad"/>
+        <Communication destinationClassName="com.scnu.element.Bullet"/>
+    </Class>
+    <Class name="com.scnu.manager.GameLoad" x="459" y="1070">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+        <Association
+            destinationClassName="com.scnu.manager.ElementManager"
+            endpointName="em" kind="Simple"/>
+        <Communication destinationClassName="com.scnu.element.Prop"/>
+        <Communication destinationClassName="com.scnu.element.Enemy"/>
+        <Communication destinationClassName="com.scnu.element.BOSS"/>
+        <Communication destinationClassName="com.scnu.manager.ElementManager"/>
+        <Communication destinationClassName="com.scnu.element.ElementBase"/>
+    </Class>
+</ClassDiagram>

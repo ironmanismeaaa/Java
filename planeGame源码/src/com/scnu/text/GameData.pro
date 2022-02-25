@@ -1,0 +1,11 @@
+play2=images/play/2.PNG
+bg1=images/background/1.png
+enemy1=images/enemy/1.png
+enemy2=images/enemy/2.png
+enemy3=images/enemy/3.png
+enemy4=images/enemy/4.png
+enemy5=images/enemy/5.png
+boss1=images/boss/1.png
+file1=images/fire/1.png
+file2=images/fire/2.png
+file3=images/fire/3.png

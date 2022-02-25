@@ -1,0 +1,6 @@
+管理器和加载器放在manager包；
+所有视图部分放在view包；
+监听和线程放在controller包；
+对象元素放在element包；
+唯一的一个游戏入口放在start包；
+不懂就看注解，注解没写就问Lin
